@@ -159,7 +159,7 @@ const fill = assignment => {
 // column empty between it and 통화. That is deliberate: it is the key a title
 // puts its in-game menu on, so it is worth reaching without the send key next
 // to it — brushing 통화 in a game is a quick save nobody asked for.
-const band = { "band-c3": "MENU", "band-c5": "CALL", "band-c7": "CLR" };
+const band = { "band-c3": "MENU", "band-c5": "CALL", "band-c6": "RSK", "band-c7": "CLR" };
 // The last row's three, centred in it: the row is seven cells wide and these
 // are the middle three, which is where they sat when the row was a band of its
 // own that centred whatever was in it.
@@ -273,7 +273,7 @@ const knownKey = new Set(assignable);
 // the faces the pad has always printed; the Korean stays as the button's
 // accessible name, which is `keyLabel`. Everything else — the digits, the
 // arrows, CLR — reads the same either way and falls through.
-const faces = { CALL: "Call", MENU: "Menu", OK: "OK" };
+const faces = { CALL: "Call", MENU: "Menu", RSK: "RSK", OK: "OK" };
 
 export const keyFace = name => faces[name] ?? keyLabel(name);
 

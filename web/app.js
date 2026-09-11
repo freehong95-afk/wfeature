@@ -84,6 +84,10 @@ const keyCodes = new Map([
   // MIDlet of this era compares against are the same -6, so the server hands
   // it to a WIPI game and to a MIDlet unchanged.
   ["MENU", -6],
+  // The handset's right soft key. Some feature-phone games label this as
+  // "우측상단키" (top-right key). The server/platform layers already accept
+  // the MIDP/WIPI right-soft value -7, so the web keypad can send it directly.
+  ["RSK", -7],
   ["UP", 141],
   ["DOWN", 146],
   ["LEFT", 142],
